@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="who_man <= 0.5\ngini = 0.472\nsamples = 801\nvalue = [495.0, 306.0]", fillcolor="#f5cfb3"] ;
+1 [label="class_Third <= 0.5\ngini = 0.406\nsamples = 314\nvalue = [89.0, 225.0]", fillcolor="#87c4ef"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="deck_C <= 0.5\ngini = 0.073\nsamples = 159\nvalue = [6, 153]", fillcolor="#41a1e6"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 54\nvalue = [0, 54]", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="gini = 0.108\nsamples = 105\nvalue = [6, 99]", fillcolor="#45a3e7"] ;
+2 -> 4 ;
+5 [label="fare <= 23.35\ngini = 0.497\nsamples = 155\nvalue = [83, 72]", fillcolor="#fceee5"] ;
+1 -> 5 ;
+6 [label="gini = 0.481\nsamples = 114\nvalue = [46, 68]", fillcolor="#bfdff7"] ;
+5 -> 6 ;
+7 [label="gini = 0.176\nsamples = 41\nvalue = [37, 4]", fillcolor="#e88f4e"] ;
+5 -> 7 ;
+8 [label="fare <= 26.269\ngini = 0.277\nsamples = 487\nvalue = [406, 81]", fillcolor="#ea9a61"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="deck_E <= 0.5\ngini = 0.187\nsamples = 365\nvalue = [327, 38]", fillcolor="#e89050"] ;
+8 -> 9 ;
+10 [label="gini = 0.183\nsamples = 363\nvalue = [326, 37]", fillcolor="#e88f4f"] ;
+9 -> 10 ;
+11 [label="gini = 0.5\nsamples = 2\nvalue = [1, 1]", fillcolor="#ffffff"] ;
+9 -> 11 ;
+12 [label="fare <= 26.469\ngini = 0.456\nsamples = 122\nvalue = [79, 43]", fillcolor="#f3c6a5"] ;
+8 -> 12 ;
+13 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]", fillcolor="#399de5"] ;
+12 -> 13 ;
+14 [label="gini = 0.443\nsamples = 118\nvalue = [79, 39]", fillcolor="#f2bf9b"] ;
+12 -> 14 ;
+}
